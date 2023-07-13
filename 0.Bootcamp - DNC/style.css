@@ -61,6 +61,15 @@ button {
   border-width: 0;
   background-color: var(--secondary-color);
   font-size: 1em;
+
+}
+button:hover {
+  background-color: #5d9bed;
+  cursor: pointer;
+}
+
+button:active{
+  background-color: #094ea8;
 }
 
 main {
@@ -115,7 +124,7 @@ fieldset {
   width: 80px;
   align-self: center;
   padding: 0;
-  cursor: pointer;
+  box-shadow: 1px 1px 10px var(--secondary-color);
 }
 
 /* MAIN BANNER */
@@ -205,10 +214,10 @@ form {
 aside p {
   font-weight: 600;
 }
-
 .authorContainer {
   text-align: center;
 }
+
 
 /* tablets and then*/
 @media screen and (min-width: 768px) {

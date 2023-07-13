@@ -4,11 +4,12 @@ Neste repositório irei colocar os exercícios que achar relevante subir para o 
 
 ## Lita de Exercícios
 
-- [Bootcamp - Landing Page](#Bootcamp-DNC) - ongoing
+- [Bootcamp - Landing Page](#Bootcamp-DNC) 
 
 ## Bootcamp-DNC 
 
-Este projeto tem como objetivo a aplicação de tags semânticas do HTML e CSS.
+Este projeto tem como objetivo a aplicação de tags semânticas do HTML e CSS. Os links estão sem redirecionamento de propósito.
 
-- [Git repository]() - em construção
-- [Live site URL]() - em construção
+- Repositório Git: [Clique aqui](https://github.com/xtirian/DNC-Exercicios/tree/main/0.Bootcamp%20-%20DNC)
+- Deploy: [Clique aqui](https://bootcamp-dnc-snowy.vercel.app)
+
