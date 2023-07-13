@@ -1,0 +1,360 @@
+/* variables */
+:root {
+  --primary-color: #303030;
+  --secondary-color: #0c70f2;
+  --bg-adjust:#3030308c;
+}
+
+/* resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+
+  font-weight: 600;
+}
+
+/* fonts */
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+}
+
+h1,
+h2,
+label,
+a,
+p,
+span {
+  color: #fff;
+  line-height: 140%;
+}
+
+mark {
+  background-color: #000;
+  color: #fff;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* base styles */
+
+input {
+  color: rgba(57, 57, 57, 0.5);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+header {
+  background-color: var(--primary-color);
+}
+
+button {
+  color: #fff;
+  border-width: 0;
+  background-color: var(--secondary-color);
+  font-size: 1em;
+}
+
+main {
+  background: linear-gradient(
+    var(--secondary-color),
+    var(--primary-color) 35%,
+    var(--primary-color) 100%
+  );
+
+  padding: 10% 0;
+}
+
+footer {
+  background-color: var(--secondary-color);
+
+  font-size: 0.6em;
+}
+
+.container {
+  margin: 0 5%;
+  padding: 5% 0;
+}
+
+fieldset {
+  display: block;
+  margin: 3% 0;
+
+  border: rgba(57, 57, 57, 0.5);
+}
+
+/* mobile style */
+
+/* HEADER */
+#navBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#navigation {
+  display: flex;
+  justify-content: space-evenly;
+
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+#navigation {
+  font-size: 0.6em;
+}
+#buttonHeader {
+  margin-top: 5px;
+  width: 80px;
+  align-self: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* MAIN BANNER */
+.title {
+  font-size: 1.25em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.subtitle {
+  font-size: 0.65em;
+  text-align: center;
+  font-weight: 500;
+
+  margin: 5% 0 10% 0;
+}
+
+/* MAIN FORM */
+
+form {
+  margin: 10% auto;
+  width: 80%;
+  max-width: 630px;
+
+  font-weight: 600;
+}
+.inputLabel, .checkboxLabel {
+  font-size: 0.6em;
+}
+
+.inputText {
+  outline: none;
+  padding: 1em;
+
+  font-size: 0.6em;
+}
+
+.inputText,
+.formButton {
+  width: 100%;
+  border: 0;
+
+  border-radius: 5px;
+}
+
+#checkboxGrid {
+  display: grid;
+  grid-auto-flow: column;
+}
+.checkboxDiv {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+
+  align-items: center;
+}
+
+/* Footer */
+.footerSection {
+  display: grid;
+
+  text-align: center;
+
+  gap: 10%;
+}
+.footerGrid {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.footerGridCard {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.footerGridCard p {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+
+  padding: 5px 10px;
+  margin: 5% 0;
+
+  font-weight: 800;
+}
+
+aside p {
+  font-weight: 600;
+}
+
+.authorContainer {
+  text-align: center;
+}
+
+/* tablets and then*/
+@media screen and (min-width: 768px) {
+  /*Generals  */
+  a,
+  #buttonHeader {
+    font-size: 25px;
+  }
+
+  main{
+   background: linear-gradient(
+      var(--secondary-color) 5%,
+      var(--primary-color) 45%,
+      var(--primary-color) 100%
+    )
+  }
+
+  .container {
+    padding: 2% 0;
+  }
+
+  /* Navigation Header */
+  #navBar {
+    flex-direction: row;
+  }
+  #navigation {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    gap: 50px;
+  }
+  #buttonHeader {
+    margin-top: 0;
+    padding: 5px 10px;
+  }
+
+  /* Banner */
+
+  .title {
+    font-size: 80px;
+  }
+  .subtitle {
+    font-size: 40px;
+  }
+
+  /* Form */
+
+ .inputLabel {
+   font-size: 30px;
+   line-height: 42px;
+ }
+ .checkboxLabel {
+  font-size:25px;
+  line-height: 30px;
+
+ }
+ 
+ .inputText {
+   line-height: 25px;
+   padding: 10px 10px; 
+   font-size: 20px;
+ }
+ 
+ .inputText,
+ .formButton { 
+   border-radius: 10px;
+ }
+ 
+ #checkboxGrid {
+   display: grid;
+   grid-auto-flow: column;
+ }
+ .checkboxDiv {
+   flex-direction: row;
+   gap: 10px;
+   row-gap: 0;
+ 
+   align-items: center;
+ }
+
+ [type="checkbox"] {
+  width: 25px;
+  height: 25px;
+ }
+
+ .formButton{
+  font-size: 32px;
+  line-height: 38px;
+  padding: 7.5px 0;
+
+  margin-top: 50px;
+ }
+
+ /* FOOTER */
+
+ .footerSection {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 55% auto;
+
+  text-align: center;
+
+  gap: 10%;
+
+}
+.footerGrid {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.footerGridCard {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  align-items: center;
+
+  font-size: 25px;
+}
+
+.footerGridCard p {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+
+  padding: 5px 10px;
+  margin: 5% 0;
+
+  font-weight: 800;
+}
+
+aside{
+ display: flex;
+ align-items: center;
+
+}
+
+aside p {
+ font-size: 20px;
+  font-weight: 600;
+
+  margin-top: 100px;
+}
+
+.authorContainer {
+  text-align: center;
+}
+
+
+}

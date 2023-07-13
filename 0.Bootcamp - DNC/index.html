@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+ <meta name="robots" content="noindex,nofollow">
+
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Bootcamp - DNC</title>
+
+ <link rel="stylesheet" href="./style.css">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <header>
+  <section class="container">
+   <nav id="navBar">
+    <div id="navigation">
+     <a href="#">Home</a>
+     <a href="#">Últimas Edições</a>
+     <a href="#">Requisitos para participar</a>
+    </div>
+    <button id="buttonHeader">Login</button>
+   </nav>
+  </section>
+ </header>
+
+ <main>
+  <!-- BANNER -->
+  <section class="container">
+   <h1 class="title">Bootcamp DNC</h1>
+
+   <h2 class="subtitle">
+    Esse será um evento exclusivo para todos os alunos da <em>DNC</em>, que querem <mark>acelerar a carreira</mark> com uma semana intensiva de conteúdo de mercado entre <mark>BACK-END, FRONT-END & BANCO DE DADOS.</mark>
+   </h2>
+  </section>
+  <section class="container">
+   <form action="https://formspree.io/f/mqkvknab" method="post">
+
+    <fieldset>
+     <label class="inputLabel">Nome:</label>
+     <input class="inputText" type="text" name="nome" placeholder="Insira seu nome aqui" required>
+     <label class="inputLabel">Sobrenome:</label>
+     <input class="inputText" type="text" name="sobrenome" placeholder="Insira seu sobrenome aqui" required>
+    </fieldset>
+
+    <fieldset>
+     <label class="inputLabel">Área de Interesse:</label>
+     <fieldset id="checkboxGrid">
+      <div class="checkboxDiv">
+       <input class="inputCheck" type="checkbox" name="areaDeInteresse" value="front-end" checked>
+       <label class="checkboxLabel">
+        Fron-End
+       </label>
+      </div>
+      <div class="checkboxDiv">
+       <input class="inputCheck" type="checkbox" name="areaDeInteresse" value="back-end">
+       <label class="checkboxLabel">
+        Back-End
+       </label>
+      </div>
+      <div class="checkboxDiv">
+       <input class="inputCheck" type="checkbox" name="areaDeInteresse" value="bancoDeDados">
+       <label class="checkboxLabel">
+        Banco de Dados
+       </label>
+      </div>
+     </fieldset>
+    </fieldset>
+
+    <fieldset>
+     <label class="inputLabel">E-mail:</label>
+     <input class="inputText" type="email" placeholder="Insira o seu e-mail aqui" required>
+     <label class="inputLabel">Telefone</label>
+     <input class="inputText" type="tel" placeholder="(99) 9999-9999" required>
+     <label class="inputLabel">Insira uma frase criativa aqui:</label>
+     <input class="inputText" type="email" placeholder="Insira o seu e-mail aqui">
+    </fieldset>
+
+
+    <button class="formButton" type="submit">Login</button>
+   </form>
+  </section>
+ </main>
+
+ <footer>
+  <section class="container footerSection">
+   <!-- isso aqui vai ser uma grid 2 elementos -->
+   <div class="footerGrid">
+    <div class="footerGridCard">
+     <p>Escolas</p>
+     <a href="#">Formação em Tecnologia</a>
+     <a href="#">Formação em Marketing</a>
+     <a href="#">Formação em Dados</a>
+     <a href="#">Formação em Projetos</a>
+     <a href="#">Formação em Produto</a>
+    </div>
+
+    <div class="footerGridCard">
+     <p>Sobre a DNC</p>
+     <a href="#">História</a>
+     <a href="#">Missão e Valores</a>
+     <a href="#">Trabalhe Conosco</a>
+     <a href="#">Conteúdo Gratuito</a>
+    </div>
+   </div>
+
+   <aside>
+    <p>© 2022 DTC Treinamentos & Consultoria LTDA | CNPJ: 27.995.577/0001-37 | R. Justino Cobra, 61 – Vila Ema | São José dos Campos – SP | CEP 12243-030</p>
+   </aside>
+  </section>
+  <section class="container authorContainer">
+   <p><a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a></p>
+
+   <span>Design feito pela Escola DNC - Codado por <mark>xTirian</mark></span>
+  </section>
+ </footer>
+</body>
+
+</html>
