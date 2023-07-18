@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Consulta Tabuada</title>
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+
+ <style>
+  * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+  }
+
+  body {
+   background-color: #303030;
+
+   text-align: center;
+
+   overflow-y: hidden;
+
+  }
+
+  .sectionLimit {
+   max-width: 1024px;
+   height: 100%;
+   position: relative;
+   padding-top: 100px;
+   margin: 0 auto;
+  }
+
+  h1 {
+   font-size: 48px;
+   color: #fff;
+   margin-bottom: 20px;
+  }
+
+
+  #logo {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+
+   width: 100px;
+  }
+
+  .container {
+   width: 100%;
+   margin: 0 auto;
+   max-width: 500px;
+   background-color: #efefef;
+
+   padding: 20px;
+  }
+
+
+  .section {
+   display: flex;
+   flex-direction: column;
+   row-gap: 10px;
+   align-items: center;
+
+   margin: 20px 0
+  }
+
+
+  .buttonGrid {
+   display: grid;
+   grid-auto-flow: column;
+  }
+
+  .button {
+   color: white;
+   font-size: 16px;
+   line-height: 24px;
+
+   width: 50%;
+   padding: 5px 0;
+   margin: 0 auto;
+   border-width: 0;
+   border-radius: 20px;
+
+   background-color: #215eef;
+
+  }
+
+  @media screen and (min-width: 500px) {
+
+   .container {
+    border-radius: 50px;
+   }
+  }
+ </style>
+
+</head>
+
+<body>
+ <div class="sectionLimit">
+
+  <img src="./assets/logo.png" alt="logo" id="logo">
+
+  <h1>Lâmpada</h1>
+
+  <div class="container">
+   <img src="./assets/desligada.svg" alt="lamp" id="lamp" onclick="Quebrar()">
+
+   <div class="buttonGrid">
+    <button class="button" onclick="Ligar()">Ligar</button>
+    <button class="button" onclick="Desligar()">Desligar</button>
+   </div>
+
+
+
+  </div>
+ </div>
+
+
+ <script>
+
+  var lampada = window.document.getElementById("lamp")
+
+  function estaQuebrada() {
+   return lampada.src.indexOf('quebrada') > -1
+  }
+
+  function Ligar() {
+
+   if (!estaQuebrada()) {
+
+    lampada.src = "./assets/ligada.svg"
+   }
+  }
+
+  function Desligar() {
+   if (!estaQuebrada()) {
+    lampada.src = "./assets/desligada.svg"
+   }
+  }
+
+  function Quebrar() {
+   lampada.src = "./assets/quebrada.svg"
+  }
+
+
+ </script>
+</body>
+
+</html>
