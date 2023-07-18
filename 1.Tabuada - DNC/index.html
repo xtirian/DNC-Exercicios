@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Consulta Tabuada</title>
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+
+ <style>
+  * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+  }
+
+  body {
+   background-color: #303030;
+
+   text-align: center;
+
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+   overflow-y: hidden;
+
+  }
+
+  .sectionLimit {
+   max-width: 1024px;
+   height: 100%;   
+   position: relative;
+   padding-top: 100px;
+   margin: 0 auto;
+  }
+
+  h1 {
+   font-size: 48px;
+   color: #fff;
+  }
+
+  p {
+   font-size: 16px;
+   line-height: 24px;
+  }
+
+  #logo {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+
+   width: 100px;
+  }
+
+  .container {
+   width: 100%;
+   margin: 0 auto;
+   max-width: 500px;
+   background-color: #efefef;
+
+   padding: 20px;
+  }
+
+  [type="number"] {
+   width: 80%;
+   height: 30px;
+
+   font-size: 16px;
+   line-height: 24px;
+
+   border-radius: 24px;
+   border-style: none;
+
+
+   appearance: textfield;
+
+   text-align: center;
+
+  }
+
+  /* [type="number"]::-webkit-inner-spin-button{
+   -webkit-appearance: none;
+  } */
+
+  .section {
+   display: flex;
+   flex-direction: column;
+   row-gap: 10px;
+   align-items: center;
+
+   margin: 20px 0
+  }
+
+  .button {
+   color: white;
+   font-size: 16px;
+   line-height: 24px;
+
+   width: 50%;
+   padding: 5px 0;
+   margin: 10px 0;
+   border-width: 0;
+   border-radius: 20px;
+
+   background-color: #215eef;
+
+  }
+
+  #resultadoSect {
+   max-height: 300px;
+   overflow-y: scroll;
+  }
+
+  @media screen and (min-width: 500px) {
+
+   .container {
+    border-radius: 50px;
+   }
+  }
+ </style>
+
+</head>
+
+<body>
+ <div class="sectionLimit">
+
+  <img src="./assets/logo.png" alt="logo" id="logo">
+
+  <h1>Tabuada</h1>
+
+  <div class="container">
+   <div class="section">
+    <p>Qual número você deseja saber a <br>tabuada?</p>
+    <input type="number" id="valor1" value="">
+    <p>Até que número você quer?</p>
+    <input type="number" id="valor2" value="">
+
+    <button class="button" onclick="calcular()">Calcular</button>
+
+   </div>
+
+   <div class="section" id="resultadoSect"></div>
+  </div>
+ </div>
+
+
+
+
+ <script>
+  function calcular() {
+
+   var valor = window.document.getElementById("valor1").value
+   var limite = window.document.getElementById("valor2").value;
+
+   console.log(valor)
+
+   let respostaSect = window.document.getElementById('resultadoSect');
+
+   if (valor.length == 0 || limite.length == 0) {
+
+    window.alert('Preencha todos os campos')
+    console.log('Preencha todos os campos')
+
+
+   } else {
+
+    valor = Number(valor)
+    limite = Number(limite)
+
+    respostaSect.innerHTML = `<p>A tabuada de ${valor} é:</p>`
+
+    let resposta;
+
+    for (let i = 0; i <= limite; i++) {
+     resposta = window.document.createElement('p');
+
+     let resultado = valor * i;
+
+     console.log(`${valor} x ${i} = ${resultado}`);
+
+     resposta.textContent += `${valor} x ${i} = ${resultado}`
+
+     respostaSect.appendChild(resposta)
+    }
+   }
+
+
+  }
+
+
+ </script>
+</body>
+
+</html>
