@@ -6,7 +6,7 @@ Neste repositório irei colocar os exercícios que achar relevante subir para o 
 
 - [Bootcamp - Landing Page](#Bootcamp-DNC) 
 - [Tabuada](#Tabuada-DNC) 
-- [Lâmpada](#Lampada-DNC) 
+- [Lâmpada](#jogo-da-lampada) 
 
 ## Bootcamp-DNC 
 
@@ -22,10 +22,16 @@ Este projeto tem como objetivo a Manipulação de DOM.
 - Repositório Git: [Clique aqui](https://github.com/xtirian/DNC-Exercicios/tree/main/1.Tabuada%20-%20DNC)
 - Deploy: [Clique aqui](https://tabuada-dnc-pink.vercel.app/)
 
-## Tabuada-DNC 
+## Jogo da Lampada
 
 Este projeto tem como objetivo a Manipulação de DOM.
 
-- Repositório Git: [Clique aqui](https://github.com/xtirian/DNC-Exercicios/tree/main/1.Tabuada%20-%20DNC)
-- Deploy: [Clique aqui](https://tabuada-dnc-pink.vercel.app/)
+- Repositório Git: [Clique aqui](https://github.com/xtirian/DNC-Exercicios/tree/main/2.JogoDaLampada-DNC)
+- Deploy: [Clique aqui](https://lampada-dnc-six.vercel.app/)
 
+## Cadastro Produtos
+
+Este projeto tem como objetivo a criação de objetos com classes.
+
+- Repositório Git: [Clique aqui](https://github.com/xtirian/DNC-Exercicios/tree/main/2.JogoDaLampada-DNC)
+- Deploy: [Clique aqui](https://lampada-dnc-six.vercel.app/)

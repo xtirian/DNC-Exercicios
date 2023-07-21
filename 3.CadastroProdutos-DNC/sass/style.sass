@@ -1,0 +1,93 @@
+// IMPORTS
+@use 'mixins'
+
+//GLOBAL
+
+*
+ margin: 0
+ padding: 0
+ box-sizing: border-box
+ font-family: Verdana, Geneva, Tahoma, sans-serif
+
+ .header
+  background-color: #303030
+  color: #fefefe
+  padding: 1%
+
+  display: grid
+  grid-auto-flow: column
+  grid-template-columns: 100px auto
+
+  font-size: 0.8em
+  text-align: center
+
+  &-logo
+   max-width: 100px
+
+  &-titulo
+   margin-top: 15px
+   margin
+
+.main
+ background-color: #fefefe
+
+ padding: 50px 20px
+
+ &-container
+  @include mixins.container
+
+  &-card
+   background-color: aliceblue
+   margin: 15px 0
+   padding: 15px
+   border-radius: 10px
+
+   &-field
+    display: flex
+    flex-direction: column
+    row-gap: 2px
+    margin: 10px 0
+
+    input
+     font-size: 12px
+     padding: 5px
+     appearance: textfield
+     border-radius: 5px
+     border-width: 0
+     outline: none
+
+   &-button
+    background-color: #303030
+    color: #fefefe
+    border-width: 0
+    font-size: 12px
+    padding: 5px 15px
+    border-radius: 5px
+
+    &:hover
+     background-color: #606060
+    &:active
+     background-color: #202020
+
+  table
+   border-collapse: collapse
+   width: 100%
+
+   & thead
+    background-color: #303030
+    color: #fefefe
+
+    & th
+     border: 0.1px #fefefe solid
+
+   & tbody
+
+   & tr
+    padding: 1px
+
+    & td
+     border: 1px #fefefe solid
+     text-align: center
+
+    & td:first-child
+     text-align: right

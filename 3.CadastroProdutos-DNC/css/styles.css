@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+* .header {
+  background-color: #303030;
+  color: #fefefe;
+  padding: 1%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 100px auto;
+  font-size: 0.8em;
+  text-align: center;
+}
+* .header-logo {
+  max-width: 100px;
+}
+* .header-titulo {
+  margin-top: 15px;
+}
+.main {
+  background-color: #fefefe;
+  padding: 50px 20px;
+}
+.main-container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+.main-container-card {
+  background-color: aliceblue;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 10px;
+}
+.main-container-card-field {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+  margin: 10px 0;
+}
+.main-container-card-field input {
+  font-size: 12px;
+  padding: 5px;
+  appearance: textfield;
+  border-radius: 5px;
+  border-width: 0;
+  outline: none;
+}
+.main-container-card-button {
+  background-color: #303030;
+  color: #fefefe;
+  border-width: 0;
+  font-size: 12px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.main-container-card-button:hover {
+  background-color: #606060;
+}
+.main-container-card-button:active {
+  background-color: #202020;
+}
+.main-container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.main-container table thead {
+  background-color: #303030;
+  color: #fefefe;
+}
+.main-container table thead th {
+  border: 0.1px #fefefe solid;
+}
+.main-container table tr {
+  padding: 1px;
+}
+.main-container table tr td {
+  border: 1px #fefefe solid;
+  text-align: center;
+}
+.main-container table tr td:first-child {
+  text-align: right;
+}
+
+/*# sourceMappingURL=styles.css.map */
