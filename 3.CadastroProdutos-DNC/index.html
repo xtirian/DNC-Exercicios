@@ -4,7 +4,7 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
+ <title>Controle de Produtos</title>
 
  <!-- Styles -->
  <link rel="stylesheet" href="css/styles.css">
@@ -35,7 +35,7 @@
     </div>
 
     <button class="main-container-card-button" onclick="produto.addItem()">Adicionar</button>
-    <button class="main-container-card-button">Cancelar</button>
+    <button class="main-container-card-button" onclick="produto.LimparCampos()">Cancelar</button>
    </div>
 
 
@@ -50,19 +50,8 @@
       <th>Editar</th>
      </thead>
 
-     <tbody id="listaProdutos">
-      <tr>
-       <td>1</td>
-       <td>1</td>
-       <td>1</td>
-       <td>1</td>
-      </tr>
-      <tr>
-       <td>1</td>
-       <td>1</td>
-       <td>1</td>
-       <td>1</td>
-      </tr>
+     <tbody id="listaProdutos">     
+      
      </tbody>
 
     </table>

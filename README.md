@@ -31,7 +31,7 @@ Este projeto tem como objetivo a Manipulação de DOM.
 
 ## Cadastro Produtos
 
-Este projeto tem como objetivo a criação de objetos com classes.
+Este projeto tem como objetivo a prática criação de objetos com classes, criação de elementos html com javascript e criação de tabelas.
 
-- Repositório Git: [Clique aqui](https://github.com/xtirian/DNC-Exercicios/tree/main/2.JogoDaLampada-DNC)
-- Deploy: [Clique aqui](https://lampada-dnc-six.vercel.app/)
+- Repositório Git: [Clique aqui](https://github.com/xtirian/DNC-Exercicios/tree/main/3.CadastroProdutos-DNC)
+- Deploy: [Clique aqui](https://cadastro-produtos-sigma.vercel.app)
