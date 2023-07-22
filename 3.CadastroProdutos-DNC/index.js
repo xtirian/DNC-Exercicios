@@ -97,20 +97,15 @@ class Produto {
   }
 
   RemoverProduto(id) {
-    window.alert(`Vamos deletar o id ${id}`);
-
     const listaTela = window.document.getElementById("listaProdutos");
 
     for (let x = 0; x < this.ListaSalva.length; x++) {
-      window.alert(
-        `O produto ${this.ListaSalva[x].nomeDoProduto} foi apagado com sucesso`);
-      
       if (this.ListaSalva[x].id == id) {
+        window.alert(
+        `O produto ${this.ListaSalva[x].nomeDoProduto} foi apagado com sucesso`);
+        
         this.ListaSalva.splice((x), 1);
         listaTela.deleteRow(x);
-
-        
-        
       }
     }
   }
