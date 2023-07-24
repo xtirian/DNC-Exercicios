@@ -1,0 +1,336 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+header {
+  background: linear-gradient(90deg, #000 20%, #FFD900);
+}
+@media (max-width: 1100px) {
+  header {
+    background: linear-gradient(90deg, #000 30%, #FFD900);
+  }
+}
+header .header {
+  max-width: 97vw;
+  margin: 0 auto;
+}
+header .header-logo {
+  width: 202px;
+  margin-left: 58px;
+}
+@media (max-width: 768px) {
+  header .header-logo {
+    width: 150px;
+    margin-left: 15px;
+  }
+}
+@media (max-width: 440px) {
+  header .header-logo {
+    width: 100px;
+  }
+}
+
+main .main {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 50%;
+}
+@media (max-width: 1100px) {
+  main .main {
+    grid-template-columns: 45% auto;
+  }
+}
+@media (max-width: 768px) {
+  main .main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+main .main-content {
+  background-color: #514988;
+  padding: 58px;
+  color: #FFF;
+}
+@media (max-width: 1440px) {
+  main .main-content {
+    padding: 58px 0;
+  }
+}
+@media (max-width: 768px) {
+  main .main-content {
+    padding: 36px 0;
+  }
+}
+main .main-content-title {
+  font-size: 56px;
+  line-height: 85.07px;
+  text-align: center;
+  font-weight: 700;
+  color: #FFD900;
+  margin-bottom: 3%;
+}
+@media (max-width: 1440px) {
+  main .main-content-title {
+    font-size: 42px;
+    line-height: 51.04px;
+  }
+}
+@media (max-width: 440px) {
+  main .main-content-title {
+    font-size: 32px;
+  }
+}
+main .main-content-date {
+  font-size: 27px;
+  line-height: 32.81px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10%;
+}
+@media (max-width: 440px) {
+  main .main-content-date {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+}
+main .main-content-text {
+  font-size: 29px;
+  line-height: 35.24px;
+  text-align: center;
+  font-weight: 400;
+  padding: 0 5%;
+}
+@media (max-width: 1440px) {
+  main .main-content-text {
+    font-size: 27px;
+    line-height: auto;
+  }
+}
+@media (max-width: 1100px) {
+  main .main-content-text {
+    font-size: 22px;
+  }
+}
+@media (max-width: 440px) {
+  main .main-content-text {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+}
+main .main-countdown {
+  position: relative;
+  padding: 0 15px;
+}
+main .main-countdown-interval {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+@media (max-width: 440px) {
+  main .main-countdown-interval {
+    padding-top: 0;
+  }
+}
+main .main-countdown-interval p {
+  font-size: 56px;
+  line-height: 85.07px;
+  text-align: center;
+  font-weight: 700;
+  color: #514988;
+}
+@media (max-width: 1440px) {
+  main .main-countdown-interval p {
+    font-size: 42px;
+    line-height: auto;
+  }
+}
+@media (max-width: 1100px) {
+  main .main-countdown-interval p {
+    font-size: 36px;
+  }
+}
+main .main-countdown-interval p span {
+  margin: 20px;
+}
+@media (max-width: 440px) {
+  main .main-countdown-interval p span {
+    font-size: 28px;
+    margin: 0;
+  }
+}
+main .main-countdown-title {
+  font-size: 30px;
+  line-height: 36.46px;
+  text-align: center;
+  font-weight: 700;
+  color: #E33881;
+}
+@media (max-width: 1440px) {
+  main .main-countdown-title {
+    font-size: 27px;
+    line-height: auto;
+  }
+}
+@media (max-width: 1100px) {
+  main .main-countdown-title {
+    font-size: 22px;
+  }
+}
+main .main-countdown-video {
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  max-width: 880px;
+  height: 76%;
+  max-height: 510px;
+}
+@media (max-width: 1440px) {
+  main .main-countdown-video {
+    width: 95%;
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  main .main-countdown-video {
+    position: relative;
+  }
+}
+@media (max-width: 440px) {
+  main .main-countdown-video {
+    left: 10px;
+    width: 95%;
+    height: 200px;
+  }
+}
+main .ticket {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+@media (max-width: 1100px) {
+  main .ticket {
+    gap: 55px;
+  }
+}
+@media (max-width: 768px) {
+  main .ticket {
+    flex-direction: column;
+    padding-bottom: 50px;
+    gap: 36px;
+  }
+}
+@media (max-width: 440px) {
+  main .ticket {
+    gap: 15px;
+    padding-bottom: 20px;
+  }
+}
+main .ticket-container {
+  padding: 15px 42px;
+}
+@media (max-width: 1100px) {
+  main .ticket-container {
+    width: 45%;
+    padding: 15px;
+  }
+}
+@media (max-width: 768px) {
+  main .ticket-container {
+    width: 100%;
+  }
+}
+main .ticket-container-title {
+  font-size: 27px;
+  line-height: 32.81px;
+  text-align: center;
+  font-weight: 700;
+  color: #FFD900;
+}
+@media (max-width: 1440px) {
+  main .ticket-container-title {
+    font-size: 20px;
+    line-height: auto;
+  }
+}
+main .ticket-container-grid {
+  margin-top: 15px;
+}
+main .ticket-container-grid img:hover {
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+@media (max-width: 1440px) {
+  main .ticket-container-grid {
+    text-align: center;
+  }
+  main .ticket-container-grid img {
+    width: 150px;
+  }
+}
+@media (max-width: 1100px) {
+  main .ticket-container-grid {
+    display: flex;
+    justify-content: center;
+  }
+  main .ticket-container-grid img {
+    width: 100px;
+  }
+}
+@media (max-width: 768px) {
+  main .ticket-container-grid img {
+    margin-top: 36px;
+    width: 150px;
+  }
+}
+@media (max-width: 440px) {
+  main .ticket-container-grid {
+    flex-wrap: wrap;
+  }
+  main .ticket-container-grid img {
+    margin-top: 15px;
+    width: 45%;
+  }
+}
+main .ticket-button {
+  background-color: #514988;
+  color: #FFF;
+  height: 148px;
+  width: 596px;
+  border-radius: 20px;
+  font-size: 42px;
+  line-height: 51.04px;
+  text-align: center;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1440px) {
+  main .ticket-button {
+    font-size: 30px;
+    line-height: auto;
+    height: 128px;
+    width: 496px;
+  }
+}
+@media (max-width: 440px) {
+  main .ticket-button {
+    font-size: 16px;
+    height: 75px;
+    width: 250px;
+  }
+}
+main .ticket-button:hover {
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,266 @@
+//IMPORTS
+@use 'variables'
+@use 'mixin'
+
+
+//RESETS
+*
+ font-family: Verdana, Geneva, Tahoma, sans-serif
+ margin: 0
+ padding: 0
+ box-sizing: border-box
+
+a  
+ text-decoration: none
+ transition: 0.4s
+
+//HEADER
+
+header 
+ background: linear-gradient( 90deg, #000 20%, variables.$primary-color)
+
+ @include mixin.TABLET
+  background: linear-gradient( 90deg, #000 30%, variables.$primary-color)
+ 
+ .header
+  @include mixin.container
+
+  &-logo
+   width: 202px
+   margin-left: 58px
+
+   @include mixin.MOBILEL
+    width: 150px
+    margin-left: 15px
+   
+   @include mixin.MOBILES
+    width: 100px
+
+main
+
+ .main
+  display: grid
+  grid-auto-flow: column
+  grid-template-columns: 50%
+  
+  @include mixin.TABLET
+   grid-template-columns: 45% auto
+  
+  @include mixin.MOBILEL
+   display: flex
+   flex-direction: column
+
+  &-content
+   background-color: variables.$secondary-color
+   padding: 58px
+   color: variables.$blank
+
+   @include mixin.PCS
+    padding: 58px 0
+   
+   @include mixin.MOBILEL
+    padding: 36px 0
+
+   &-title
+    @include mixin.font1    
+    color: variables.$primary-color
+    margin-bottom: 3%
+
+    @include mixin.PCS
+     font-size: 42px
+     line-height: 51.04px  
+   
+    @include mixin.MOBILES
+     font-size: 32px
+   
+   &-date
+    @include mixin.font5
+    margin-bottom: 10%
+
+    @include mixin.MOBILES
+     font-size: 22px
+     margin-bottom: 15px 
+   
+   &-text
+    @include mixin.font4
+    padding: 0 5%
+
+    @include mixin.PCS
+     font-size: 27px
+     line-height: auto
+   
+    @include mixin.TABLET
+     font-size: 22px
+
+    @include mixin.MOBILES
+     font-size: 16px
+     padding: 0 10px
+
+  &-countdown
+   position: relative
+   padding: 0 15px
+
+   &-interval
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    padding-top: 15px
+
+    @include mixin.MOBILES
+     padding-top: 0
+
+
+    p
+     @include mixin.font1
+     color: variables.$secondary-color     
+     
+     @include mixin.PCS
+      font-size: 42px
+      line-height: auto
+    
+     @include mixin.TABLET
+      font-size: 36px
+
+     
+     
+     span
+      margin: 20px
+      @include mixin.MOBILES
+       font-size: 28px
+       margin: 0
+
+      
+   
+   &-title
+    @include mixin.font3
+    color: variables.$tertiary-color
+   
+    @include mixin.PCS
+     font-size: 27px
+     line-height: auto
+    
+    @include mixin.TABLET
+     font-size: 22px
+   
+   &-video
+    position: absolute
+    bottom: 0
+    width: 95%
+    max-width: 880px
+    height: 76%
+    max-height: 510px
+
+    @include mixin.PCS
+     width: 95%
+     height: 400px   
+    
+    @include mixin.MOBILEL 
+     position: relative
+
+    @include mixin.MOBILES
+     left: 10px
+     width: 95%
+     height: 200px   
+
+
+ .ticket
+  display: flex
+  align-items: center
+  gap: 100px
+
+  @include mixin.TABLET
+   gap: 55px 
+
+  @include mixin.MOBILEL
+   flex-direction: column
+   padding-bottom: 50px
+   gap: 36px
+  
+  @include mixin.MOBILES
+   gap: 15px
+   padding-bottom: 20px
+  
+  
+  
+  &-container   
+   padding: 15px 42px
+   
+   @include mixin.TABLET
+    width: 45%
+    padding: 15px
+   
+   @include mixin.MOBILEL
+    width: 100%   
+
+   &-title
+    @include mixin.font5
+    color: variables.$primary-color
+
+    @include mixin.PCS
+     font-size: 20px
+     line-height: auto
+   
+   &-grid
+    margin-top: 15px
+    
+    img:hover
+     transition: 0.4s
+     transform: scale(1.1)
+    
+    @include mixin.PCS
+     text-align: center
+     img
+      width: 150px 
+    
+    @include mixin.TABLET
+     display: flex
+     justify-content: center
+     
+     img
+      width: 100px
+   
+    @include mixin.MOBILEL
+     img
+      margin-top: 36px
+      width: 150px
+
+    @include mixin.MOBILES
+     flex-wrap: wrap
+     img
+      margin-top: 15px
+      width: 45%
+    
+
+  &-button
+   background-color: variables.$secondary-color
+   color: variables.$blank   
+   
+
+   height: 148px
+   width: 596px
+   border-radius: 20px
+
+   @include mixin.font2
+   display: flex
+   align-items: center
+   justify-content: center
+   
+   @include mixin.PCS
+    font-size: 30px
+    line-height: auto
+    height: 128px
+    width: 496px
+
+   @include mixin.MOBILES
+    font-size: 16px
+    height: 75px
+    width: 250px
+
+   &:hover
+    transform: scale(1.2)
+
+
+
+
+   

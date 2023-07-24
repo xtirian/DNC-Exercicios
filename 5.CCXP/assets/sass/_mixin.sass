@@ -1,0 +1,63 @@
+
+@mixin font1
+ font-size: 56px
+ line-height: 85.07px
+ text-align: center
+ font-weight: 700
+
+@mixin font2
+ font-size: 42px
+ line-height: 51.04px
+ text-align: center
+ font-weight: 700
+
+@mixin font3
+ font-size: 30px
+ line-height: 36.46px
+ text-align: center
+ font-weight: 700
+
+@mixin font4
+ font-size: 29px
+ line-height: 35.24px
+ text-align: center
+ font-weight: 400
+
+@mixin font5
+ font-size: 27px
+ line-height: 32.81px
+ text-align: center
+ font-weight: 700
+
+@mixin font6
+ font-size: 17px
+ line-height: 20.66px
+ text-align: center
+ font-weight: 700
+
+@mixin container
+ max-width: 97vw
+ margin: 0 auto
+
+//MEDIA QUERRIES
+
+//PC 1440PX
+@mixin PCS
+ @media (max-width:1440px)
+  @content
+
+// TABLET 1280PX < 1100PX
+
+@mixin TABLET
+ @media (max-width:1100px)
+  @content
+
+//PHONE 768PX < 375PX
+@mixin MOBILEL
+ @media (max-width:768px)
+  @content
+
+@mixin MOBILES
+ @media (max-width:440px)
+  @content
+
