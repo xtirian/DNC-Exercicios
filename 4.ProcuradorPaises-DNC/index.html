@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Pesquisador de países</title>
+</head>
+
+<body class="bg-dark text-white">
+  <!-- Só uma imagem -->
+  <nav class="navbar navbar-light bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/logo.png" width="100" alt="">
+    </a>
+  </nav>
+  <h1 class="text-center font-weight-bold">Search your country</h1>
+
+  <div class="container input-group mb-3">
+    <!-- input -->
+    <input type="text" class="form-control" placeholder="Country name" aria-label="Country name" aria-describedby="button-addon2" id="inputCountry">
+    <!-- botão -->
+    <div class="input-group-append">
+      <button onclick="Procurar()" class="btn btn-outline-secondary bg-primary text-white border border-primary" type="button" id="button-addon2">Search</button>
+    </div>
+
+  </div>
+  <!-- Card -->
+  
+    <div id="card" class="card container text-dark text-center d-none" style="width: 18rem;">
+
+      <img class="card-img-top" id="bandeira" src="" alt="Imagem de capa do card">
+
+      <div class="card-body">
+        <h5 class="card-title" id="pais"></h5>
+       
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Capital</strong> <p id="capital"></p></li>
+        <li class="list-group-item"><strong>Continent</strong> <p id="continent"></p></li>
+        <li class="list-group-item"><strong>Population</strong> <p id="population"></p></li>
+      </ul>
+    </div>
+  
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  
+  <script src="index.js"></script>
+</body>
+
+</html>
