@@ -11,7 +11,7 @@ function Procurar() {
       let population = data[0].population;
       let countryName = data[0].name.common;
       let capital = data[0].capital[0];
-      let continent = data[0].name.common;
+      let continent = data[0].continents[0];
       let flagImg = data[0].flags.svg;
       let flagAlt = data[0].flags.alt;
 

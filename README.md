@@ -4,18 +4,19 @@ Neste repositório irei colocar os exercícios que achar relevante subir para o 
 
 ### Lita de Exercícios
 
-- [Bootcamp - Landing Page](#Bootcamp-DNC) 
-- [Tabuada](#Tabuada-DNC) 
-- [Lâmpada](#jogo-da-lampada) 
+- [Bootcamp - Landing Page](#Bootcamp-DNC)
+- [Tabuada](#Tabuada-DNC)
+- [Lâmpada](#jogo-da-lampada)
+- [Cadastro Produtos](#cadastro-produtos)
 
-## Bootcamp-DNC 
+## Bootcamp-DNC
 
 Este projeto tem como objetivo a aplicação de tags semânticas do HTML e CSS. Os links estão sem redirecionamento de propósito.
 
 - Repositório Git: [Clique aqui](https://github.com/xtirian/DNC-Exercicios/tree/main/0.Bootcamp%20-%20DNC)
 - Deploy: [Clique aqui](https://bootcamp-dnc-snowy.vercel.app)
 
-## Tabuada-DNC 
+## Tabuada-DNC
 
 Este projeto tem como objetivo a Manipulação de DOM.
 
@@ -35,3 +36,10 @@ Este projeto tem como objetivo a prática criação de objetos com classes, cria
 
 - Repositório Git: [Clique aqui](https://github.com/xtirian/DNC-Exercicios/tree/main/3.CadastroProdutos-DNC)
 - Deploy: [Clique aqui](https://cadastro-produtos-sigma.vercel.app)
+
+## Procurador de Países
+
+Este procurador de países é um projeto que usa API com informações dos países, rederizado com HTML/CSS e Bootstrap
+
+- Repositório Git: [Clique aqui](https://github.com/xtirian/DNC-Exercicios/tree/main/4.ProcuradorPaises-DNC)
+- Deploy: [Clique aqui](https://search-country-omega.vercel.app)
