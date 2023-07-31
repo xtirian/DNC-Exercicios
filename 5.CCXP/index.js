@@ -1,13 +1,13 @@
-const dia = window.document.getElementById('dia');
-const hora = window.document.getElementById('hora');
-const minuto = window.document.getElementById('minuto');
-const segundo = window.document.getElementById('segundo');
+const dia = window.document.getElementById("dia");
+const hora = window.document.getElementById("hora");
+const minuto = window.document.getElementById("minuto");
+const segundo = window.document.getElementById("segundo");
 
 const lancamento = "30 nov 2023";
 const dataLancamento = new Date(lancamento);
 
 function CountDown() {
-  let hoje = new Date();  
+  let hoje = new Date();
 
   let segundosTotal = (dataLancamento - hoje) / 1000;
 
@@ -16,11 +16,10 @@ function CountDown() {
   let minRestantes = Math.floor((segundosTotal / 60) % 60);
   let segRestantes = Math.floor(segundosTotal % 60);
 
-
-  dia.innerHTML = `${formatText(diasRestantes)}D`
-  hora.innerHTML = `${formatText(horRestantes)}H`
-  minuto.innerHTML = `${formatText(minRestantes)}M`
-  segundo.innerHTML = `${formatText(segRestantes)}S`
+  dia.innerHTML = `${formatText(diasRestantes)}D`;
+  hora.innerHTML = `${formatText(horRestantes)}H`;
+  minuto.innerHTML = `${formatText(minRestantes)}M`;
+  segundo.innerHTML = `${formatText(segRestantes)}S`;
 }
 
 function formatText(tempo) {
@@ -31,4 +30,11 @@ function formatText(tempo) {
   }
 }
 
-setInterval(CountDown, 1000)
+setInterval(CountDown, 1000);
+
+function highLight(selector) {
+  var card = document.querySelector(selector)
+
+  card.classList.toggle("ticket-ligter")
+
+}

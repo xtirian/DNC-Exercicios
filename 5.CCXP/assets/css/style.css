@@ -264,9 +264,10 @@ main .ticket-container-title {
 main .ticket-container-grid {
   margin-top: 15px;
 }
-main .ticket-container-grid img:hover {
+.ticket-ligter {
   transition: 0.4s;
   transform: scale(1.1);
+  box-shadow: 8px 5px 3px #b8b8b8 ;
 }
 @media (max-width: 1440px) {
   main .ticket-container-grid {
@@ -329,6 +330,7 @@ main .ticket-button {
     width: 250px;
   }
 }
+
 main .ticket-button:hover {
   transform: scale(1.2);
 }
