@@ -32,7 +32,7 @@ function formatText(tempo) {
 
 setInterval(CountDown, 1000);
 
-//HIGH LIGHT
+//HIGH LIGHT WITH MOUSE OVER
 
 function highLight(selector) {
   var card = document.querySelector(selector);
@@ -62,3 +62,6 @@ let selectTicket = (selector) => {
 let showTickets = () => {
   if (tickets.length > 0) alert(`Ingressos Selecionados: ${tickets}`);
 }
+
+
+//FORM TO SIGN NEWSLETTER
