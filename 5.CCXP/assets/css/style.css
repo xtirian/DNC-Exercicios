@@ -269,6 +269,11 @@ main .ticket-container-grid {
   transform: scale(1.1);
   box-shadow: 8px 5px 3px #b8b8b8 ;
 }
+
+.ticket-selected {
+  border: 5px solid green;
+}
+
 @media (max-width: 1440px) {
   main .ticket-container-grid {
     text-align: center;
@@ -334,5 +339,7 @@ main .ticket-button {
 main .ticket-button:hover {
   transform: scale(1.2);
 }
+
+
 
 /*# sourceMappingURL=style.css.map */

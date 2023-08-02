@@ -54,14 +54,17 @@
     <h2 class="ticket-container-title">AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h2>
 
     <div class="ticket-container-grid">
-     <img src="./assets/images/quinta.svg" alt="ticket-quinta" class="tiket-container-grid-img1" id="quinta" onmouseover="highLight('#quinta')" onmouseout="highLight('#quinta')" >
-     <img src="./assets/images/sexta.svg" alt="ticket-sexta" class="tiket-container-grid-img2" id="sexta" onmouseover="highLight('#sexta')" onmouseout="highLight('#sexta')">
-     <img src="./assets/images/sabado.svg" alt="ticket-sabado" class="tiket-container-grid-img3" id="sabado" onmouseover="highLight('#sabado')" onmouseout="highLight('#sabado')">
-     <img src="./assets/images/domingo.svg" alt="ticket-domingo" class="tiket-container-grid-img4" id="domingo" onmouseover="highLight('#domingo')" onmouseout="highLight('#domingo')">
+     <img src="./assets/images/quinta.svg" alt="ticket-quinta" class="tiket-container-grid-img1" id="quinta" onmouseover="highLight('#quinta')" onmouseout="highLight('#quinta')" onclick="selectTicket('#quinta')" >
+
+     <img src="./assets/images/sexta.svg" alt="ticket-sexta" class="tiket-container-grid-img2" id="sexta" onmouseover="highLight('#sexta')" onmouseout="highLight('#sexta')" onclick="selectTicket('#sexta')">
+     
+     <img src="./assets/images/sabado.svg" alt="ticket-sabado" class="tiket-container-grid-img3" id="sabado" onmouseover="highLight('#sabado')" onmouseout="highLight('#sabado')" onclick="selectTicket('#sabado')">
+     
+     <img src="./assets/images/domingo.svg" alt="ticket-domingo" class="tiket-container-grid-img4" id="domingo" onmouseover="highLight('#domingo')" onmouseout="highLight('#domingo')" onclick="selectTicket('#domingo')">
 
     </div>
    </div>
-   <a href="http://" class="ticket-button">GARANTA O SEU!</a>
+   <a href="http://" class="ticket-button" onclick="showTickets()">GARANTA O SEU!</a>
   </section>
  </main>
 

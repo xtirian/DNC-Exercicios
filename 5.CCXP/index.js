@@ -32,9 +32,33 @@ function formatText(tempo) {
 
 setInterval(CountDown, 1000);
 
+//HIGH LIGHT
+
 function highLight(selector) {
-  var card = document.querySelector(selector)
+  var card = document.querySelector(selector);
 
-  card.classList.toggle("ticket-ligter")
+  card.classList.toggle("ticket-ligter");
+}
 
+//TICKET SELECT
+
+const tickets = [];
+
+function selectTicket(selector) {
+  var element = document.querySelector(selector);
+  element.classList.toggle("ticket-selected");
+
+  console.log(tickets);
+
+  if (tickets.includes(selector)) {
+    tickets.pop(selector);
+  } else {
+    tickets.push(selector);
+  }
+
+  console.log(tickets);
+}
+
+function showTickets() {
+  if (tickets.length > 0) alert(`Ingressos Selecionados: ${tickets}`);
 }
