@@ -44,7 +44,7 @@ function highLight(selector) {
 
 const tickets = [];
 
-function selectTicket(selector) {
+let selectTicket = (selector) => {
   var element = document.querySelector(selector);
   element.classList.toggle("ticket-selected");
 
@@ -59,6 +59,6 @@ function selectTicket(selector) {
   console.log(tickets);
 }
 
-function showTickets() {
+let showTickets = () => {
   if (tickets.length > 0) alert(`Ingressos Selecionados: ${tickets}`);
 }
