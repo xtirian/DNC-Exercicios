@@ -10,10 +10,25 @@ Neste repositório irei colocar os exercícios que achar relevante subir para o 
 - [Cadastro Produtos](#cadastro-produtos)
 - [Procurador de Países](#procurador-de-países)
 - [CCXP - Landing Page](#ccxp)
+- [Sorveteria - Landing Page](#sorveteria)
+
+## MarketPlace
+
+MarketPace com o qual foram estudados pseudoclasses, aplicado conceitos de JIRA Product Requirement, programação assincrona, protocolo HTTP, Promises, Fetch, elementos dinamicos e arquitetura REST
+
+- Repositório Git: [Clique aqui](https://github.com/xtirian/DNC-Exercicios/blob/feature/JS-Avancado/dnc-store-advanced)
+- Deploy: [Sem link ainda]()
+
+## Sorveteria
+
+Este projeto é uma landing page antifa que usei para testar. O objetivo era apenas exercitar os comandos de clone, push, pull, merge e criação de branchs.
+
+- Repositório Git: [Clique aqui](https://github.com/xtirian/DNC-Exercicios/blob/feature/JS-Avancado/6.sorveteriaprojeto)
+- Deploy: [Clique aqui](https://ccxp-ivory.vercel.app)
 
 ## CCXP
 
-Este projeto é uma landing page que tem como objetivo anunciar o evento. Conta com recursos de manipulação de DOM para fazer um countdown para o dia do evento. 
+Este projeto é uma landing page que tem como objetivo anunciar o evento. Conta com recursos de manipulação de DOM para fazer um countdown para o dia do evento.
 
 - Repositório Git: [Clique aqui](https://github.com/xtirian/DNC-Exercicios/tree/main/5.CCXP)
 - Deploy: [Clique aqui](https://ccxp-ivory.vercel.app)
