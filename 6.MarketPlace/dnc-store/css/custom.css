@@ -1,0 +1,7 @@
+.card-produto:hover {
+  box-shadow: 0 0 30px blue;
+}
+
+.card-produto-destaque{
+ box-shadow: 50px 40px; 
+}
