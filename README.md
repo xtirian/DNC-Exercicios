@@ -19,13 +19,6 @@ MarketPace com o qual foram estudados pseudoclasses, aplicado conceitos de JIRA 
 - Repositório Git: [Clique aqui](https://github.com/xtirian/DNC-Exercicios/blob/feature/JS-Avancado/dnc-store-advanced)
 - Deploy: [Sem link ainda]()
 
-## Sorveteria
-
-Este projeto é uma landing page antifa que usei para testar. O objetivo era apenas exercitar os comandos de clone, push, pull, merge e criação de branchs.
-
-- Repositório Git: [Clique aqui](https://github.com/xtirian/DNC-Exercicios/blob/feature/JS-Avancado/6.sorveteriaprojeto)
-- Deploy: [Clique aqui](https://ccxp-ivory.vercel.app)
-
 ## CCXP
 
 Este projeto é uma landing page que tem como objetivo anunciar o evento. Conta com recursos de manipulação de DOM para fazer um countdown para o dia do evento.
