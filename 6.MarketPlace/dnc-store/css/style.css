@@ -25,7 +25,7 @@
 
 * {
      box-sizing: border-box !important;
-     transition: ease all 0.5s;
+     transition: ease-in-out 1s;
 }
 
 html {
@@ -1082,7 +1082,7 @@ ul.top_icon li a {
 }
 
 
-}
+
 .main-menu ul li:last-child a {
      padding-right: 0;
 }
@@ -1158,7 +1158,7 @@ ul.top_icon li a {
 .main-menu ul>li a:hover {
      color: #fff;
 }
-.main-menu ul>li:nth-child (6) {
+.main-menu ul>li:nth-child(6) {
      padding-right: 0px;
 }
 .nav>li {
@@ -1793,6 +1793,7 @@ font-weight: normal;
 .page-top {
      margin-top: 85px;
 }
+
 img.zoom {
      width: 100%;
      object-fit: cover;
@@ -1884,7 +1885,7 @@ img.zoom {
      margin: 0px;
 }
 form {
-     background: #081b30
+     background: #081b30;
      padding: 35px 30px;
 }
 .map_section figure img {
