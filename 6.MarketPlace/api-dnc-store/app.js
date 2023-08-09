@@ -18,19 +18,19 @@ app.get('/produtos', (req, res) => {
     const produtos = [
         
         {
-            urlImagem: "../images/basketball.png",
-            nomeProduto: "Bola de Basquete",
-            preco: "R$ 12,00"
+            urlImagem: "images/basketball.png",
+            nomeProduto: "Basketball",
+            preco: "R$ 50,00"
         },
         {
-            urlImagem: "../images/boksing-gloves.png",
+            urlImagem: "images/boksing-gloves.png",
             nomeProduto: "Placa",
             preco: "R$ 240,00"
         },
         {
-            urlImagem: "../images/robo-lego.webp",
-            nomeProduto: "Placa",
-            preco: "R$ 240,00"
+            urlImagem: "images/robo-lego.webp",
+            nomeProduto: "Robo-lego",
+            preco: "R$ 350,00"
         },
 
     ]
