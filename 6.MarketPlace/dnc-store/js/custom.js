@@ -3,12 +3,20 @@ function alterarDestaque() {
   cards = Array.from(cards);
 
   for (x = 0; x < cards.length; x++) {
-    console.log(cards[x].classList);
-
+    
     cards[x].classList.toggle("card-produto-destaque");
 
-    console.log(cards[x].classList);
+    
   }
 }
 
 setInterval(alterarDestaque, 1500);
+
+
+function getProduct () {
+  fetch('http://localhost:3000/produtos').then( (response) => response.json() ).then((data) => {
+    console.log(data)
+  })
+}
+
+getProduct()
