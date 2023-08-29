@@ -1,0 +1,26 @@
+.button-a{
+ border: none;
+ outline: none;
+
+
+ background-color: #f8f8f8;
+ color: #787878;
+
+ 
+ height: 36px;
+ padding: 10px 12px;
+ border-radius: 4px;
+ font-size: 15px;
+ letter-spacing: -2%;
+ 
+}
+
+.button-a:active {
+ background-color: #787878;
+ color: #f8f8f8;
+
+ transition-duration: 0.05s;
+}
+.button-a:hover {
+ border: 1px solid #787878;
+}
