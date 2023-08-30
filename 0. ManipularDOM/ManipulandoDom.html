@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+
+ <style>
+  body {
+   background-color: #303030;
+   color: #fefefe;
+  }
+ </style>
+</head>
+
+<body>
+
+ <h1>Manipulando o DOM</h1>
+ <p name="paragrafo">Estou aprendendo a manipular o DOM utilizando o JS.</p>
+ <div id="div-1">
+  <p>JavaScript é incrível.</p>
+ </div>
+
+
+ <script>
+
+  var x = window.document.getElementsByTagName('h1')[0]
+  x.style.color = 'red'
+
+  var y = window.document.getElementsByName('paragrafo')[0]
+  y.style.backgroundColor = '#fefefe'
+  y.style.color = '#303030'
+
+  var z = window.document.querySelector('div#div-1')
+  z.style.textAlign = 'center'  
+
+  window.document.write("escrevendo com o comando 'document.write'")
+
+
+  var titulo = window.document.getElementsByTagName('h1')[0]
+
+  titulo.innerHTML += " com a DNC"
+
+
+ </script>
+</body>
+
+</html>
