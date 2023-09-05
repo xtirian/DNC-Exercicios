@@ -1,0 +1,39 @@
+.Skills {
+ border-radius: 2rem;
+background: rgba(1, 9, 28, 0.75);
+
+max-width: calc(100vw * 0.880555556);
+ margin: 4.3rem auto;
+padding: 2.2rem ;
+
+text-align: center;
+
+filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.75))
+}
+
+.Skills h2 {
+ font-size: 6.6rem;
+ line-height: 8rem;
+}
+
+.Skills p {
+ font-size: 2.9rem;
+ line-height: 3.5rem;
+}
+
+.skillsGrid{
+ display: flex;
+ padding: 4rem;
+ justify-content: center;
+ gap: 6.6rem;
+}
+
+.skillsGrid img{
+ height: 14.3rem;
+}
+
+.skillsGrid img:hover {
+ transform: scale(1.1) translateX(-10px) translateY(-10px) ;
+ transition-duration: 500ms;
+ 
+}

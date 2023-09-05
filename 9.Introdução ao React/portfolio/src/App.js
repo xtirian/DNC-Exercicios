@@ -1,18 +1,19 @@
-
-import './App.css';
-import NavBar from './components/sections/NavBar';
-import Presentation from './components/sections/Presentation';
-import Skills from './components/sections/Skills';
-import Projects from './components/sections/Projects';
-import Footer from './components/sections/Footer';
+import "./App.css";
+import NavBar from "./assets/components/sections/NavBar";
+import Presentation from "./assets/components/sections/Presentation";
+import Skills from "./assets/components/sections/Skills";
+import Projects from "./assets/components/sections/Projects";
+import Footer from "./assets/components/sections/Footer";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <Presentation />
-      <Skills />
-      <Projects />
+      <main>
+        <Presentation />
+        <Skills />
+        <Projects />
+      </main>
       <Footer />
     </div>
   );
