@@ -7,7 +7,7 @@ export default function ButtonB({ children, link }) {
 
   return (
     <div className={style.btn2}>
-      <button onclick={handleClick}>{children}</button>
+      <button onClick={handleClick}>{children}</button>
     </div>
   );
 }

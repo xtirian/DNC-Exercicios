@@ -12,3 +12,9 @@
 
 
 }
+
+.btn2 button:hover{
+ border: 1px solid #fff;
+
+ color: #fff;
+}
