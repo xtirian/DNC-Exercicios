@@ -1,57 +1,64 @@
-:root{
- --section-width: 48%;
- --img-width: 550px;
+:root {
+  --section-width: 48%;
+  --img-width: 550px;
 }
 
+.cardProject {
+  width: calc(100vw * 0.880555556);
+  margin: 0 auto;
+  position: relative;
 
-.cardProject{
- width: calc(100vw * 0.880555556);
- margin: 0 auto;
- position: relative;
-
- display: flex;
- justify-content: space-between;
- padding-bottom: 4.7rem; 
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4.7rem;
 }
 
 .cardProject section {
- padding: 2.1rem 3.4rem ;
- width: var(--section-width);
- position: absolute;
- z-index: -1;
+  padding: 2.1rem 3.4rem;
+  width: var(--section-width);
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
 
- transform: translateX( calc( var(--img-width) + 15rem ));
- animation-name: infoTranslation;
- animation-duration: 2s;
+  transform: translateX(calc(var(--img-width) + 15rem));
+  animation-name: infoTranslation;
+  animation-duration: 2s;
 
- border-radius: 1.5rem;
- background: rgba(1, 9, 28, 0.90); 
+  border-radius: 1.5rem;
+  background: rgba(1, 9, 28, 0.9);
 
- font-size: 2.5rem;
- line-height: 4rem;
+  font-size: 2.5rem;
+  line-height: 4rem;
 
- display: flex;
- flex-direction: column;
- row-gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
 }
 
-.cardProject a{
- width: 48%;
+.cardProject a {
+  width: 100%;
 }
 
 .cardProject img {
- width: var(--img-width);
- align-self: flex-start;
+  width: var(--img-width);
+  align-self: flex-start;
 }
 
-.cardProject img:hover{
- cursor: pointer;
- transform: scale(1.1); 
+.cardProject img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 @keyframes infoTranslation {
- from {
-  transform: translateX(0)}
- to {
-  transform: translateX( calc( var(--img-width) + 15rem ));}
+  from {
+    transform: translateX(450px);
+    z-index: -1;
+    opacity: 0;
+    
+  }
+  to {
+    transform: translateX(calc(var(--img-width) + 15rem));
+    z-index: 1;
+    opacity: 1;
+  }
 }
