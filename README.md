@@ -10,14 +10,14 @@ Neste repositório irei colocar os exercícios que achar relevante subir para o 
 - [Cadastro Produtos](#cadastro-produtos)
 - [Procurador de Países](#procurador-de-países)
 - [CCXP - Landing Page](#ccxp)
-- [Sorveteria - Landing Page](#sorveteria)
+- [Portfolio](#portfolio)
 
-## MarketPlace
+## Portfolio
 
-MarketPace com o qual foram estudados pseudoclasses, aplicado conceitos de JIRA Product Requirement, programação assincrona, protocolo HTTP, Promises, Fetch, elementos dinamicos e arquitetura REST
+Criação de um portfolio dando os primeiros passos em React
 
-- Repositório Git: [Clique aqui](https://github.com/xtirian/DNC-Exercicios/blob/feature/JS-Avancado/dnc-store-advanced)
-- Deploy: [Sem link ainda]()
+- Repositório Git: [Clique aqui](https://github.com/xtirian/DNC-Exercicios/tree/main/9.Introdu%C3%A7%C3%A3o%20ao%20React/portfolio)
+- Deploy: [Clique aqui](https://portfolio-dnc-nine.vercel.app/)
 
 ## CCXP
 
