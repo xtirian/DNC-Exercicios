@@ -15,12 +15,12 @@ export default function ProjectCards({
   const [info, setInfo] = useState(false);
 
   function handleInfo(){
-   info === false ? setInfo(true):setInfo(false)
+   setInfo(true)
   }
 
   return (
     <div className={style.cardProject} >
-      <a href={liveURL} target="_blank" onMouseEnter={handleInfo} onMouseLeave={handleInfo} >
+      <a href={liveURL} target="_blank" onMouseEnter={handleInfo} >
         <img src={img} />
       </a>
       {info === true && (
