@@ -1,0 +1,12 @@
+.FooterContainer {
+ display: flex;
+ flex-direction: column;
+ row-gap: 2rem;
+ align-items: center;
+ font-size: 2.2rem;
+ line-height: 4.4rem;
+
+ text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

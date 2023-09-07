@@ -1,0 +1,21 @@
+.Presentation {
+ max-width: calc(100vw * 0.880555556);
+ margin: 0 auto;
+ padding: 4.3rem 0;
+
+ display: flex;
+ flex-direction: column;
+ row-gap: 46px;
+ 
+}
+
+.Presentation h1 {
+font-size: 7.8rem;
+line-height: 9.44rem;
+}
+
+.Presentation p {
+ font-size: 2.9rem;
+ line-height: 3.91rem;
+ max-width: 928px;
+}

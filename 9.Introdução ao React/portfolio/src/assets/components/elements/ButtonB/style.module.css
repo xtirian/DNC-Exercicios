@@ -1,0 +1,22 @@
+.btn2 button {
+ outline: 0;
+ background-color: transparent;
+ border: 1px solid #74FAC0;
+ border-radius: 15px;
+ padding: 10px;
+
+ font-size: 2.1rem;
+ font-weight: 700;
+ line-height: 2.541rem;
+ color: #74FAC0;
+
+
+}
+
+.btn2 button:hover{
+ border: 1px solid #fff;
+
+ color: #fff;
+ cursor: crosshair;
+}
+

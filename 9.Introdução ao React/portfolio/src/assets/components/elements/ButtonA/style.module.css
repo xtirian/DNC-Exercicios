@@ -1,0 +1,23 @@
+
+.btn button{
+ border: none;
+ border-radius: 15px;
+ outline: none;
+ background: #74FAC0;
+
+ color: #01091C;
+ font-weight: 700;
+
+ padding: 20px 80px
+ ;
+}
+
+.btn button:hover {
+ background: #01091C;
+
+ color: #fff;
+
+ transition: ease-out 400ms;
+
+
+}
