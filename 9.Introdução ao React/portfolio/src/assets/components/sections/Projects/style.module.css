@@ -2,13 +2,20 @@
  max-width: calc(100vw * 0.880555556);
  margin: 0 auto;
  padding: 3.9rem 0;
+
+ display: flex;
+ align-items: center;
+ flex-direction: column;
 }
 
 .Projects h2 {
  font-size: 6.6rem;
  line-height: 8rem;
 
- margin-bottom: 1.rem;
+ margin-bottom: 2rem;
 }
 
 
+.Button{
+ align-content: center;
+}

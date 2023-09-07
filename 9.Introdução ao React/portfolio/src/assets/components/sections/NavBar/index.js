@@ -1,6 +1,7 @@
 import style from './style.module.css'
 import { FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Nav from 'react-bootstrap/Nav'
+import Icons from '../../elements/Icons';
 
 
 export default function NavBar() {
@@ -12,11 +13,7 @@ export default function NavBar() {
           <li> <Nav.Link href="#Skills">Habilidades</Nav.Link></li>
           <li><Nav.Link href="#Projects">Projetos</Nav.Link></li>
          </ul>
-         <ul>
-          <li> <a href='https://www.instagram.com/xtirian/' target='_blank'><FaInstagram size={30} /></a></li>
-          <li> <a href='https://github.com/xtirian'  target='_blank'><FaGithub size={30} /></a></li>
-          <li> <a href='https://www.linkedin.com/in/mf-cunha/' target='_blank'><FaLinkedinIn size={30} /></a></li>
-         </ul>
+         <Icons />
       </div>
     </header>
   );

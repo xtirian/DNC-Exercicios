@@ -1,0 +1,10 @@
+.IconContainer ul {
+ display: flex ;
+ gap: 2.5rem;
+ align-items: center;
+
+}
+
+.IconContainer li {
+ font-size: 2rem;
+}
