@@ -1,6 +1,13 @@
+:root{
+ --section-width: 48%;
+ --img-width: 550px;
+}
+
+
 .cardProject{
- max-width: calc(100vw * 0.880555556);
+ width: calc(100vw * 0.880555556);
  margin: 0 auto;
+ position: relative;
 
  display: flex;
  justify-content: space-between;
@@ -9,13 +16,19 @@
 
 .cardProject section {
  padding: 2.1rem 3.4rem ;
- width: 48%;
+ width: var(--section-width);
+ position: absolute;
+ z-index: -1;
+
+ transform: translateX( calc( var(--img-width) + 15rem ));
+ animation-name: infoTranslation;
+ animation-duration: 2s;
 
  border-radius: 1.5rem;
  background: rgba(1, 9, 28, 0.90); 
 
- font-size: 2.9rem;
- line-height: 4.35rem;
+ font-size: 2.5rem;
+ line-height: 4rem;
 
  display: flex;
  flex-direction: column;
@@ -27,7 +40,8 @@
 }
 
 .cardProject img {
- width: 100%
+ width: var(--img-width);
+ align-self: flex-start;
 }
 
 .cardProject img:hover{
@@ -35,3 +49,9 @@
  transform: scale(1.1); 
 }
 
+@keyframes infoTranslation {
+ from {
+  transform: translateX(0)}
+ to {
+  transform: translateX( calc( var(--img-width) + 15rem ));}
+}

@@ -1,5 +1,6 @@
 import style from "./style.module.css";
 import Button from "../ButtonB";
+import React, {useState} from "react";
 
 import Project1 from "../../../images/projects/thumbnail-project1.webp";
 
@@ -11,14 +12,18 @@ export default function ProjectCards({
   content,
   link,
 }) {
-  const info = [];
+  const [info, setInfo] = useState(false);
+
+  function handleInfo(){
+   info === false ? setInfo(true):setInfo(false)
+  }
 
   return (
-    <div className={style.cardProject}>
-      <a href={liveURL} target="_blank">
+    <div className={style.cardProject} >
+      <a href={liveURL} target="_blank" onMouseEnter={handleInfo} onMouseLeave={handleInfo} >
         <img src={img} />
       </a>
-      {info.length > 1 && (
+      {info === true && (
         <section>
           <h3>{title}</h3>
           <p>
