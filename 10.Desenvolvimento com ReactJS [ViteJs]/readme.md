@@ -12,3 +12,41 @@ Ele é importante pelos seguintes motivos:
 - Estimula o tree shaking para eliminar códigos sem uso
 - Apesar de ser otimizado para o desenvolvimento, ele também provê capabilidades para para a construção em produção.
 - Configuração simplificada.
+
+
+Após a instalação do NPM, vamos instalar as dependências do React Router
+
+## React Router Dom
+
+1. Para instalar no Vite.js, use o seguinte comando:
+
+```bash
+$ npm install react-router-dom localforage match-sorter sort-by
+```
+
+2. Após instalado, vamos para a segunda etapa, importar os componentes. Importante ressaltar que as modificações referentes às rotas devem ser feitas diretamente na pata **main.jsx**
+
+```javascript
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import "./index.css";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <div>Hello world!</div>,
+  },
+]);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
+
+```
