@@ -39,7 +39,18 @@ import "./index.css";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <div>Home</div>,
+    errorElement: <ErrorPage /> //Vai para a página caso aconteça algum erro com o diretório que estamos chamando
+  },
+    {
+    path: "/galeria",
+    element: <div>galeria</div>,
+    children: [ //children é o conceito de página que para chegar até a pagina children, você precisa passar pela página parent
+      {
+        path: "/galeria/:quadroId" //colocando os 2 pontos, você está informando que o "quadroId" na realidade é uma variável.
+        element: <div>Quadro</div>
+      }
+    ]
   },
 ]);
 
@@ -50,3 +61,24 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 );
 
 ```
+
+Pr fim, para adicionar o link a um botão ou âncora, devemos usar o componente react chamado <Link>
+
+```javascript
+
+<button>
+<link to={`/galeria`}>Clique para ir para a galeria</link>
+</button>
+
+<button>
+<link to={`/galeria/1`}>Clique para acessar direto um quadro da galeria</link>
+</button>
+
+```
+
+Repare que o primeir botão ele irá para uma galeria de fotos onde tem todos os quadros dispostos. No segundo botão vamos acionar uma terceira página, que apresentará o quadro da galeria que tem o Id 1.
+
+
+## Usando SASS no projeto
+
+Sass é um pré-processador de CSS que trabalha com as extensões scss e sass.
