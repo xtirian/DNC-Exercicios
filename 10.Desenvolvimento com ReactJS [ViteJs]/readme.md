@@ -82,3 +82,58 @@ Repare que o primeir botão ele irá para uma galeria de fotos onde tem todos os
 ## Usando SASS no projeto
 
 Sass é um pré-processador de CSS que trabalha com as extensões scss e sass.
+
+Para instalar o sass rodamos o seguinte comando: [Versão desenvolvedor]
+```bash
+sudo npm add -D sass
+```
+
+As principais utilidades do SASS são:
+- Variáveis
+- Nesting
+- Partials
+-- Modulos
+-- Mixins
+- Extensões
+- Heranças
+- Operadores
+
+## Ciclo de vida de um componente
+
+O ciclo de vida de um componente começa com a sua montagem, esta montage tem:
+1. Construtor
+2. Renderiza
+3. Update do DOM
+
+```javascript
+
+componentDidMount(){
+  console.log("Olá mundo")
+}
+
+```
+
+O componentDidUpdate altera alguns componentes da página quando alguma variável de estado é atualizda ou props for incluída. Este cara é chamado para atualizar algo.
+
+```javascript
+
+//Com ele eu posso pegar a props ou o state que estava anteriormenete, e dependendo da mudança ele executa uma função. Por exemplo, cada vez que eu mudar de página alterar o title da página.
+componentDidUpdate(prevProps, prevState){
+
+}
+
+```
+
+Por fim temos o componentDidUnmount que executa assim que o componente é destruído. Ou seja, quando ele é removido da tela. Por exemplo, quando a pessoa sair da tela
+
+```javascript
+
+
+componentDidUpdate(){
+
+}
+
+```
+
+Esta é uma forma que os sábios antigos fazia o que hoje nós chamamos de Hooks.
+

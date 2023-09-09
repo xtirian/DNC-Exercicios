@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './index.scss'
 
 const Login = () => {
   return (
-    <div>
+    <div className="Login">
       {" "}
       <h1>Login </h1>
       <button>

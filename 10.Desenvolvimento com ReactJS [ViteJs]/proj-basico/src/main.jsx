@@ -3,12 +3,13 @@ import React from 'react'
 
 import ReactDOM from 'react-dom/client'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
-import './index.css'
+import './index.scss'
 
 //Views
 import Login from './views/Login/Login';
 import Home from './views/Home/Home';
 import Products from './views/Products/Products';
+import Pay from './views/Pay/Pay';
 
 const rotas = createBrowserRouter([
   {
@@ -24,10 +25,10 @@ const rotas = createBrowserRouter([
     path: "/products/:productsId",
     element: <Products/>,
   },
-  // {
-  //   path: "/pay",
-  //   element: <App />,
-  // },
+  {
+    path: "/pay",
+    element: <Pay title="Contador" lista={['maçã', 'pera', 'uva']} />,
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

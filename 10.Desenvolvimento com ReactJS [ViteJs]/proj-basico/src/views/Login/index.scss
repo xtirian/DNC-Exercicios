@@ -1,0 +1,17 @@
+@use '../../sass/variables';
+@use '../../sass/mixins';
+
+.Login {
+ width: 250px;
+ background-color: variables.$main-color;
+ border-radius: variables.$main-border-radius;
+ h1{
+  color: variables.$second-color;
+  @include mixins.flex-center;
+
+ }
+
+ button{
+  @include mixins.main-button($background: green, $color:orange)
+ }
+}

@@ -1,0 +1,21 @@
+@use "./variables";
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin main-button($background: darkgrey, $color: white) {
+  border-radius: variables.$main-border-radius;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  background-color: $background;
+  
+
+  a {
+    text-decoration: none;
+    color: $color;
+  }
+}
