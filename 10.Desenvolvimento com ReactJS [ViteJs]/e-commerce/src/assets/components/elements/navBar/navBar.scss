@@ -1,0 +1,60 @@
+@use '../../../../sass/mixin';
+
+.navBar-container {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 2.583rem;
+
+  width: 100%;
+  
+}
+
+.page_navigation {
+  ul {
+    display: flex;
+    gap: 48px;
+    @include mixin.desktopM{
+     gap: 10px;
+    }
+  }
+
+  ul li {
+    text-transform: capitalize;
+  }
+
+  ul li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .page_active {
+    font-weight: 600;
+  }
+}
+
+.cart_container {
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+
+    font-weight: 500;
+  }
+  p:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  @include mixin.desktopM{
+   .cart_icon{
+    display: none;
+   }
+  }
+}
