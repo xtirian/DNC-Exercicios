@@ -1,0 +1,60 @@
+@use "./variables" as *;
+
+@mixin container {
+  width: min(91%, $container);
+  margin: 0 auto;
+}
+
+//BUTTONS
+%button {
+  background-color: $secondary-color;
+  color: white;
+  border: none;
+  outline: none;
+
+  border-radius: 8px;
+
+  font-weight: 700;
+
+  &:hover {
+    background-color: #01d7ee;
+  }
+  &:active {
+    background-color: #00abff;
+  }
+}
+
+@mixin buttonL {
+  @extend %button;
+  height: 48px;
+  font-size: 1.8rem;
+  line-height: 2.113rem;
+}
+
+@mixin buttonS {
+  @extend %button;
+
+  border: 1px solid #00000033;
+  border-radius: 0;
+  width: 128px;
+  height: 24px;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin: 0 auto;
+
+}
+
+
+//QUERYS
+
+@mixin desktopM {
+  @media screen and (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin desktopS {
+  @media screen and (max-width: 1000px) {
+    @content;
+  }
+}

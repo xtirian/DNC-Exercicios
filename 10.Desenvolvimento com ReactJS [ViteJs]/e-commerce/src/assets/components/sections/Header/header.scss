@@ -1,0 +1,28 @@
+@use '../../../../sass/variables';
+@use '../../../../sass/mixin';
+
+.header_container{ 
+ background-color: variables.$bg-header ; 
+
+ &-grid{
+  display: flex;
+  gap: 70px;
+  
+  
+  @include mixin.container;
+  padding: 2.0833333% 0;
+
+  &-logo{
+   img{
+    width: 109px;
+    height: 56px;
+   }
+  }
+
+  .hiddenNav{
+   display: none;
+  }
+
+ }
+
+}

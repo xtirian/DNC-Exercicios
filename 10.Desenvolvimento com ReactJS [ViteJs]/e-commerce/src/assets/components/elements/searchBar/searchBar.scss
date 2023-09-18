@@ -1,0 +1,60 @@
+@use '../../../../sass/variables';
+
+.searchBar_container{
+
+ display: flex;
+ gap: 35px;
+}
+
+.searchBar{
+ display: flex;
+ align-items: center;
+ gap: 17px;
+ color: #7a7a7a;
+
+ border: 1px solid #7a7a7a55;
+
+ height: 48px;
+ width: 85%;
+
+ border-radius: 10px;
+
+ padding: 12px 29px;
+
+ &:hover{
+  cursor: pointer;
+ }
+
+ input{
+  border: none;
+  outline: none;
+  font-size: 2.2rem;
+  line-height: 2.583rem;
+
+  color: #7a7a7a;
+
+  cursor: pointer;
+ }
+
+ input[type="text"]:focus ~ * {
+  color: variables.$secondary-color !important;
+ }
+}
+
+
+
+.profile_container{
+ display: flex;
+ align-items: center;
+ gap: 15px;
+}
+
+.profile_container > * {
+ color: variables.$primary-color;
+}
+
+.profile_container > *:hover {
+ color: variables.$secondary-color ;
+ cursor: pointer;
+ transform: scale(1.15);
+}

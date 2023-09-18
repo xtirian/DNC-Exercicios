@@ -1,0 +1,45 @@
+@use '../../../../sass/mixin';
+@use '../../../../sass/variables';
+
+
+
+.cardContainer{
+ width: max(25.78125%, 330px);
+
+ border: 1px solid variables.$border-color;
+ border-radius: 8px;
+
+ display: flex;
+ flex-direction: column;
+
+ 
+ 
+
+ p{
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-align: center;
+
+  margin-top: 16px;
+  margin-bottom: 11px;
+  
+ }
+
+ img{
+  border-radius: 8px 8px 0px 0;
+  width: 100%;
+ }
+
+ button{
+  @include mixin.buttonS;
+
+  margin-bottom: 16px;
+ }
+ 
+}
+
+.cardContainer:hover{
+ transform: scale(1.2);
+ transition: ease-in-out;
+ transition-duration: 300ms;
+}

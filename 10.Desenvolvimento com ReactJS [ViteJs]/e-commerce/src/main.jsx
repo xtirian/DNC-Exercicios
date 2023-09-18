@@ -11,6 +11,9 @@ import Home from './assets/views/Home/Home'
 import Product from './assets/views/Product/Product'
 import Pay from './assets/views/Pay/Pay'
 
+//MOCK PRODUTOS
+import { PRODUCTS_MOCK } from './mock/products.mock'
+
 const Rotas = createBrowserRouter([
   {
     path: `/`,
@@ -18,15 +21,15 @@ const Rotas = createBrowserRouter([
   },
   {
     path: `/home`,
-    element: <Home />
+    element: <Home data={PRODUCTS_MOCK} />
   },
   {
     path: `/product/:productId`,
-    element: <Product />
+    element: <Product data={PRODUCTS_MOCK} />
   },
   {
     path: `/pay/:payId`,
-    element: <Pay />
+    element: <Pay data={PRODUCTS_MOCK} />
   },
 ])
 

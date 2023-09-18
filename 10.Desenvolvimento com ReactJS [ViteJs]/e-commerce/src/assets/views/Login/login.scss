@@ -1,0 +1,101 @@
+@use "../../../sass/mixin";
+@use "../../../sass/variables";
+
+
+
+
+.login-container {
+  @include mixin.container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  row-gap: 84px;
+
+  padding: 160px 0;
+}
+
+.login-presentation {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1px;
+  text-align: center;
+
+  &-title {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.522rem;
+  }
+  &-subtitle {
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 2.583rem;
+  }
+}
+
+.login-form {
+ width: 524px;
+
+ display: flex;
+ flex-direction: column;
+ row-gap: 31px; 
+
+ label{
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.348rem;    
+ }; 
+
+ input{
+  border: 2px solid variables.$primary-color;
+  border-radius: 10px;
+
+  padding: 13px 18px;
+  
+
+  font-size: 1.4rem;
+  line-height: 1.644rem;
+  color: variables.$primary-color;
+
+
+  //Usei o offset de propósito;
+  outline-offset: -1px;
+  outline-color: variables.$secondary-color !important;
+  outline-style: solid;
+  outline-width: 0px;
+
+  &:focus{
+  outline-width: 2px;
+  } 
+
+ };
+
+.password-icon{
+ position: absolute;
+ top: 50px;
+ right: 20px ;
+}
+
+a{  
+ margin-top: 35px;
+ width: 100%;
+}
+
+
+ button{  
+
+  @include mixin.buttonL;
+
+  width: 100%
+  
+  
+ };
+
+}
