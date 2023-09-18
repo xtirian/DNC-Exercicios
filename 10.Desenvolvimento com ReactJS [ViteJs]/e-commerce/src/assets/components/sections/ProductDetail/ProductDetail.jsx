@@ -62,12 +62,13 @@ const ProductDetail = ({ data }) => {
 
         <div className="right-colors-div">
           {data.colors.map((cor) => (
-            <label
+            
+              <div><input type="radio" id={`cor-${cor}`} name="selectedColor" value={cor} />
+              <label
               style={{ backgroundColor: `${cor}` }}
-              onClick={(e) => setSelectedColor(e.target.value)}
-            >
-              <input type="radio" id={cor} name="selectedColor" value={cor} />
-            </label>
+              for={`cor-${cor}`}
+              onClick={(e) => setSelectedColor(e.target.control.value)}></label>
+              </div>
           ))}
         </div>
         <div className="right-size">
@@ -75,7 +76,9 @@ const ProductDetail = ({ data }) => {
 
           <div className="right-size-grid">
             {data.sizes.map((size) => (
-              <span>{size}</span>
+              <div className="size-mini-card">
+                <input type="radio" name="sizeSelected" id={`size${size}`} />
+                <label for={`size${size}`}>{size}</label></div>
             ))}
           </div>
         </div>

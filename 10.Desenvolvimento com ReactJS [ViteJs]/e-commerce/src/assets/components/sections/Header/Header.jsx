@@ -7,11 +7,7 @@ import NavBar from "../../elements/navBar/navBar";
 
 const Header = (props) => {
   let showNav = props.nav
-  let currentPage = props.page
-
-  if(showNav === false){
-    console.log(document.getElementById('navBar'))
-    }
+  let currentPage = props.page  
 
 
   return (

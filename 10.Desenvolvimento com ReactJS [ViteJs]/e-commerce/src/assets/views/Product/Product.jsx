@@ -14,6 +14,7 @@ const Products = ({data}) => {
 
   const selectedProduct = data.find(product => product.id == productId)
 
+
   return (
     <>
     <Header nav={true} page="home" />

@@ -62,9 +62,9 @@
   line-height: 20px;
 }
 
-%right-sizeCard{
- width: 64px;
- height:  64px;
+%right-sizeCard {
+  width: 64px;
+  height: 64px;
 }
 
 .productDetail_grid-right {
@@ -88,70 +88,88 @@
 
     font-size: 25px;
 
-    span{
-     text-transform: capitalize;
+    span {
+      text-transform: capitalize;
     }
   }
 
   .right-colors-div {
-   margin-top: 21px;
-   display: flex;
-   gap: 15px;
+    margin-top: 21px;
+    display: flex;
+    gap: 15px;
+    
 
     label {
-     border-radius: 10px;
+      border-radius: 10px;
+      display: block;
+
       @extend %right-sizeCard;
 
-      input{
+      border: 1px solid variables.$border-color;
+
+      
+    }
+     input {
        display: none;
+     }
+
+     input[type="radio"]:checked ~ label {
+      border-color: variables.$secondary-color;
+     }
+  }
+
+
+  .right-size {
+    margin-top: 31px;
+
+    p {
+      font-size: 25px;
+    }
+
+    &-grid {
+      margin-top: 21px;
+      display: flex;
+      gap: 25px;
+
+      label {
+        @extend %right-sizeCard;
+        @extend %right_font;
+
+        border: 1px solid #000;
+
+        border-radius: 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-transform: uppercase;
+      }
+
+      input[type="radio"]{
+        display: none;
+      }
+
+      input[type="radio"]:checked ~ label {
+        background-color: variables.$secondary-color;
+        border-color: #fff;
+        color: #fff;
+        transition: ease-in;
+        transition-duration: 250ms
       }
     }
   }
 
-  .right-size{
-   margin-top: 31px;
+  .right-button-productDetail {
+    @include mixin.buttonL;
 
-   p{
-    font-size: 25px;
-   }
+    margin-top: 111px;
 
-   &-grid{
-margin-top: 21px;
-    display: flex;
-    gap: 25px;
-
-    span{
-     @extend %right-sizeCard;
-     @extend %right_font;
-
-     border: 1px solid #000;
-     
-     border-radius: 10px;
-
-     display: flex;
-     align-items: center;
-     justify-content: center;
-
-     text-transform: uppercase;
-
-    }
-
-
-   }
-
-  }
-
-  .right-button-productDetail{
-   @include mixin.buttonL;
-
-   margin-top: 111px;
-
-   width: 100%;
-
-   a{
-    display: inline-block;
     width: 100%;
-   }
 
+    a {
+      display: inline-block;
+      width: 100%;
+    }
   }
 }
