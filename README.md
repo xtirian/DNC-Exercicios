@@ -11,6 +11,14 @@ Neste repositório irei colocar os exercícios que achar relevante subir para o 
 - [Procurador de Países](#procurador-de-países)
 - [CCXP - Landing Page](#ccxp)
 - [Portfolio](#portfolio)
+- [E-commerce](#ecommerce)
+
+## Ecommerce
+
+Criação de um Ecommerce em React com ViteJS. A principal função deste projeto foi praticar a criação de rotas dinamica
+
+- Repositório Git: [Clique aqui](https://github.com/xtirian/DNC-Exercicios/tree/main/9.Introdu%C3%A7%C3%A3o%20ao%20React/portfolio)
+- Deploy: [Clique aqui](https://e-commerce-tawny-eta.vercel.app/)
 
 ## Portfolio
 
