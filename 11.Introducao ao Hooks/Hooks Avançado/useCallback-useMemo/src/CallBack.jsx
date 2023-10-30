@@ -1,23 +1,44 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, useMemo, useState } from 'react'
 
-const CallBack = ({productId, referrer, theme}) => {
+const CallBack = () => {
 
-  const handleSubmit = useCallback(
+  
+  const [name, setName] = useState('');
+  const [text, setText] = useState('');
+
+  const carac = useMemo(() => {
+    return text.length
+  }, [text.length]);
+
+
+  const nameLimit = useCallback(
     () => {
-      postMessage(`/product/` + productId + `/buy`, {
-        referrer,
-        orderDetails,
-      })
+      console.log(240 - text.length)
     },
-    [productId, referrer],
+    [text.length],
   )
+  
+
+  
 
 
   return (
-    <div>
-      
-      <h1>CallBack</h1>
+    <div className='card'>
+      <p>Coloque o nome:</p>
+      <input type="text" value={name} onChange={e => setName(e.target.value)} />
+      <p>Coloque o texto:</p>
+      <input type="text" value={text} onChange={e => setText(e.target.value)} />
+
+      <div>
+        <p>Nome: {name}</p>
+        <p>Texto: {text}</p>
+        <p>Número de Caracteres: {carac}</p>
+        <button onClick={nameLimit}>Validar</button>
+
+      </div>
     </div>
+
+
   )
 }
 
