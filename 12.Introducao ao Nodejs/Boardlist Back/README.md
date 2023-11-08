@@ -1,4 +1,5 @@
 # Board Task Back
+Este projeto é o backend do exercicio de criar um Boad Tasks
 
 ## Tecnologias utilizadas
 
@@ -79,4 +80,4 @@ const app = express();
 require('dotenv').config();
 ```
 
-Depois de fazer esta configuração, já é possivel criar um arquivo 
+Depois de fazer esta configuração, já é possivel criar um arquivo ".env" e inserir as variaveis de ambiente
