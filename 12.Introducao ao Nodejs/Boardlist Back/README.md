@@ -81,3 +81,14 @@ require('dotenv').config();
 ```
 
 Depois de fazer esta configuração, já é possivel criar um arquivo ".env" e inserir as variaveis de ambiente
+
+Para chamar uma variável de ambiente que está no arquivo **Dotenv**, vamos ao arquivo que queremos chamar e usar o seguinte comando.
+
+```js
+//este comando foi inserido no users.js
+router.get("/", function (req, res, next) {
+  console.log("var: ", process.env.TEST); //este comando é o responsável por processar a variavel de ambiente.
+  res.send("respond with a resource ");
+});
+
+```
