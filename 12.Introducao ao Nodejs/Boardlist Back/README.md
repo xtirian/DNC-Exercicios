@@ -34,7 +34,7 @@ Primeiro item adicionado foi o script
     "dev": "npx nodemon ./bin/www" 
   },
 ```
-A inserção deste script serve para rodar o projeto (como o npm start), mas o nodemon facilita o desenvolvimento do projeto.
+A inserção deste script serve para rodar o projeto (como o npm start), mas o nodemon facilita o desenvolvimento do projeto pois ele atualiza automaticamente as autreçaões inseirdas no projeto sem precisarmos ficar reinicializando toda hora o projeto manualmente.
 
 ### Swagger
 Realizo a instação do Swagger Fará a documentação automática da API
