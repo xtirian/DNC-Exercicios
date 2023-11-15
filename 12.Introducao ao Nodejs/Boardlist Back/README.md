@@ -1,5 +1,13 @@
 # Board Task Back
-Este projeto é o backend do exercicio de criar um Boad Tasks
+Este projeto é o backend do exercicio de criar um Boad Tasks feito para o curso do Rubens Flinco da escola DNC
+
+
+
+## Table of Contents
+
+- [Tecnologias utilizadas](#tecnologias-utilizadas)
+- [Iniciando este projeto](#iniciando-este-projeto)
+- [Configurando este projeto](#configuração-do-projeto)
 
 ## Tecnologias utilizadas
 
@@ -13,19 +21,15 @@ Este projeto é o backend do exercicio de criar um Boad Tasks
 
 ## Iniciando este projeto
 
-Usei o seguinte comando para gerar o projeto do zero:
-```bash
- npx express-generator --no-view
-```
-
-Caso você clone o projeto do Github, utilize os seguintes comandos para realizar a instalação de dependências e iniciar o projeto.
-```bash
-$ npm install
-$ npm run dev
-```
+1) Primeiro você precisa colocar este repositório em seu computador.
+2) Voce precisa copiar o rquivo `Exemplo.env` que está na raiz do projeto e renomeá-lo para `.env` para que as variáveis de ambiente sejam definidas.
+3) Depois é só executar o compando ```$ npm install``` no terminal na pasta raiz do projeto.
+4) Em seguida, você pode executar o comando ```$ npm run dev``` no terminal na pasta raiz do projeto, para iniciar o servidor back-end.
+5) Depois entre na documentação da API é só acessar em seu navegador o endereço ```http://localhost:4000/```
 
 
-## Configurando Projeto
+
+## Configuração do Projeto
 
 ### Script
 Primeiro item adicionado foi o script
