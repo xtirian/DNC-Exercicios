@@ -5,7 +5,7 @@ const swaggerAutogen = require("swagger-autogen")({
 });
 
 const outputFile = "./swagger_output.json"; //aqui diz onde vai criar a documentação.
-const endpoitsFiles = ["../index.js"/*, "../src/routes.js"*/]; //neste array vamos colocar strings dos endereçõs onde ficarão configurados todas as rotas do nosso projeto.
+const endpoitsFiles = ["../index.js", "../src/routes.js"]; //neste array vamos colocar strings dos endereçõs onde ficarão configurados todas as rotas do nosso projeto.
 //estes arquivos ainda não existem no começo, mas irão aparecer no futuro. Poderia ser o app.js também.
 
 let doc = {

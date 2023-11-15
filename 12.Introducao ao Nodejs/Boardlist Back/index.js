@@ -6,11 +6,9 @@ const cors = require("cors");
 
 const swaggerUi = require("swagger-ui-express");
 const routes = require("./src/routes");
+const authDocProducao = require("./src/middlewares/authDoc");
 const swaggerOption = { customCssUrl: "/swagger-ui.css" };
 const app = express();
-
-
-
 require("dotenv").config();
 
 
@@ -32,7 +30,7 @@ if (process.env.NODE_ENV !== "test") {
   app.get("/", (req, res) => {
     /* #swagger.ignore=true*/ res.redirect("/doc");
   });
-  app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerFile, swaggerOption));
+  app.use("/doc", authDocProducao, swaggerUi.serve, swaggerUi.setup(swaggerFile, swaggerOption));
 }
 
 
